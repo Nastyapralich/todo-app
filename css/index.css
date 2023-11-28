@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(215, 142, 215), rgb(67, 39, 65));
+    padding: 20px;
+}
+
+.todo-app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    text-align: center;
+    font-size: 26px;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px auto;
+    background-color: #fff;
+    height: 50px;
+    /* border: 3px solid rgb(67, 39, 65); */
+    border-radius: 10px;
+}
+
+.main input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 20px;
+    font-weight: 14px;
+}
+
+.date{
+max-width: 100px;
+
+}
+
+#add, #del{
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(67, 39, 65);
+    color: #fff;
+}
+
+ul li{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+padding-left: 40px;
+padding-right: 40px;
+border: 1px solid  rgb(67, 39, 65);
+border-radius: 20px;
+margin-top: 20px;
+font-size: 17px;
+position: relative;
+}
+
+ul li p{
+    flex: 1;
+}
+
+.date{
+    right: 30px;
+}
+
+/* ul li::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 4px;
+    height: 9px;
+    border: solid  rgb(67, 39, 65);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+ul li::before:hover{
+    background: #c5bbbb;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+} */
+
+.checked{
+    color: #555;
+    text-decoration: line-through;
+    background-color: #a49898;
+}
+
+/* ul li::after{
+    position: absolute;
+    content: "\00d7";
+    right: 5px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    }
+     */
+
+
+.footer{
+   width: 300px;
+   margin-top: 20px;
+   display: flex;
+   
+   justify-content: space-between;
+}
+.footer span{
+    display: block;
+}
+
+.last-buttons{
+    width: 100%;
+    padding: 20px 0 0;
+}
+
+#delLast{
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(67, 39, 65);
+    color: #fff;
+    padding: 15px;
+}
+
+.galochka{
+    width: 40px;
+    height: 40px;
+    background-color: #a77799;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.galochka::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    width: 9px;
+    height: 20px;
+    border: solid  rgb(67, 39, 65);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.galochka:hover{
+background: wheat;
+border: 1px solid  rgb(67, 39, 65);
+}
+
+
+.galka-checked{
+    background: wheat;
+    border: 1px solid  rgb(67, 39, 65);
+    }
+
+.Krestik{
+    width: 40px;
+    height: 40px;
+    background-color: #a77799; 
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.Krestik::after{
+    position: absolute;
+    content: "\00d7";
+    right: 40px;
+    top: 10px;
+    width: 40px;
+    height: 44px;
+    font-size: 37px;
+    color: #423c3c;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+    .Krestik:hover{
+        background: wheat;
+        border: 1px solid  rgb(67, 39, 65);
+        }
+        
+        
+        .krest-checked{
+            background: wheat;
+            border: 1px solid  rgb(67, 39, 65);
+            }
+
